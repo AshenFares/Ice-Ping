@@ -10,6 +10,7 @@ public class GameManger : MonoBehaviour
     int playerOneScore = 0;
     int playerTwoScore = 0;
     //we use below line to be able use another method in another class 
+    public PlayerMovement playerMovement;
     public BallMovement ballMovement;
     public TMP_Text playerOneTxt;
     public TMP_Text playerTwoText;
@@ -28,7 +29,7 @@ public class GameManger : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Ball"))
         {
-            if (gameObject.CompareTag("Goal Right"))
+            if (gameObject.CompareTag("Goal Right") || gameObject.CompareTag("Goal Up"))
             {
                 playerOneScore++;
                 Debug.Log("Player One Scored : " + playerOneScore);
@@ -46,14 +47,12 @@ public class GameManger : MonoBehaviour
                 }
                 else
                 {
-
+                    playerMovement.SwitchPlayers();
                     ballMovement.ResetBall();
 
                 }
-
-
             }
-            else if (gameObject.CompareTag("Goal Left"))
+            else if (gameObject.CompareTag("Goal Left") || gameObject.CompareTag("Goal Down"))
             {
                 playerTwoScore++;
                 Debug.Log("Player Two Scored " + playerTwoScore);
@@ -71,7 +70,7 @@ public class GameManger : MonoBehaviour
                 }
                 else
                 {
-
+                    playerMovement.SwitchPlayers();
                     ballMovement.ResetBall();
 
                 }

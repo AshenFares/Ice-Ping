@@ -93,6 +93,98 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "UpAndDown",
+            "id": "1b87db00-cffa-4a9e-acba-cf06f73a79f4",
+            "actions": [
+                {
+                    "name": "1st Player",
+                    "type": "Value",
+                    "id": "756e82c1-af52-446f-9ea4-8db27214d927",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "2st Player",
+                    "type": "Value",
+                    "id": "0231668b-bcc8-4dd1-920b-d175b6eb1680",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "15634810-9526-4b3c-9b57-942c8d0c8695",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "1st Player",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "3dcafee8-eac6-417b-935b-395a7d1b82e1",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "1st Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "552ac47c-90c3-42a6-b2cd-2b1084b54156",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "1st Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "b77cff98-eeeb-4366-b43b-0363ff7e8da5",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "2st Player",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "8b36fd06-eba2-4d64-9217-bf3d9001ef4e",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "2st Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "bb1daeba-c969-4aba-9a19-5133641bd27b",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "2st Player",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
         }
     ],
     "controlSchemes": []

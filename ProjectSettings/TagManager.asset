@@ -9,6 +9,8 @@ TagManager:
   - Ball
   - Wall
   - Paddle
+  - Goal Up
+  - Goal Down
   layers:
   - Default
   - TransparentFX
